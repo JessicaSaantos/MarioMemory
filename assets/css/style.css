@@ -1,3 +1,4 @@
+/* ===== BASE ===== */
 body {
     background-image: url("../img/bg.png");
     background-repeat: no-repeat;
@@ -9,13 +10,15 @@ body {
     align-items: center;
 }
 
-
+/* ===== PGN INICIAL ======= */
 main {
     background: rgba(244, 244, 244, 0.5);
     border-radius: 10px;
     padding: 120px;
     display: flex;
+    gap: 100px;
 }
+/* =================================== */
 .logos {
     display: flex;
     flex-direction: column;
@@ -34,4 +37,41 @@ main {
     width: 165px;
     height: 41px;
     margin-top: 30px;
+}
+/* =================================== */
+.startJogo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+}
+.startJogo p {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+    text-align: center;
+    width: 375px;
+}
+.startJogo button {
+    font-weight: 700;
+    color: white;
+    background: #049CD8;
+    border: 3px solid #f4f4f4;
+    border-radius: 10px;
+    font-size: 50px;
+    width: 320px;
+    height: 80px;
+    text-align: center;
+    cursor: pointer;
+    
+    transition: all 0.3s;
+}
+.startJogo button:hover {
+    background: white;
+    background-color: transparent;
+    color: #049CD8;
+    border: 3px solid #049CD8;
+    font-size: 60px;
 }
