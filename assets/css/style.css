@@ -65,13 +65,13 @@ main {
     height: 80px;
     text-align: center;
     cursor: pointer;
-    
+
     transition: all 0.3s;
 }
 .startJogo button:hover {
     background: white;
     background-color: transparent;
-    color: #049CD8;
-    border: 3px solid #049CD8;
-    font-size: 60px;
+    color: #0630c7;
+    border: 3px solid #0630c7;
+    font-size: 58px;
 }
