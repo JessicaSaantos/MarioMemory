@@ -27,11 +27,16 @@
 
         <section class="startJogo">
             <p>Encontre todos os pares no menor tempo possível acumulando pontos a cada rodada!</p>
-            <button>Jogar</button>
+            <button id="jogar">Jogar</button>
             <!-- maratona continuar.. 6h25min. -->
         </section>
     </main>
 
-    
+    <script>
+        const jogar = document.getElementById("jogar")
+        jogar.addEventListener("click" , () => {
+        window.location.assign("./jogo.html")
+        })
+    </script>
 </body>
 </html>

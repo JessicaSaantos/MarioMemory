@@ -1,12 +1,18 @@
+// ================= BASE ===========
 const main = document.getElementById('main')
 const placarTag = document.getElementById("placar");
 const buttonEncerrar = document.getElementById("encerrar");
+// ==============
 let click01 = null;
 let click02 = null;
 let encontrados = 0;
 let placar = 0;
 
 renderizarCartas();
+
+buttonEncerrar.addEventListener("click", () => {
+    window.location.assign("./index.html");
+  });
 // ==================== Preencher o layout de cartas =========
 function renderizarCartas(){
 
