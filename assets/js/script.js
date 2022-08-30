@@ -4,7 +4,7 @@ function renderizarCartas(){
 
     const arrDuplicado = [...personagens, ...personagens]
     const embaralhados = shuffleArray(arrDuplicado)
-    console.log(arrDuplicado)
+    
 
     for(let i = 0; i < embaralhados.length; i ++){
         let carta = document.createElement("img")
