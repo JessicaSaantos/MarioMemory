@@ -2,11 +2,16 @@ body {
     background-image: url("../img/bg.png");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    height: 105vh;
     font-family: 'Nunito', sans-serif;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
+}
+
+.container {
+    width: 900px;
+    height: 100vh;
+    margin: 0 auto;
+    padding-top: 60px;
+    background: rgba(244, 244, 244, 0.5);
 }
 
 header {
@@ -31,11 +36,21 @@ header div {
 }
 
 header button {
-    border: 1px solid #f4f4f4;
+    border: 2px solid #f4f4f4;
     color: #f4f4f4;
-    background-color: rgb(238, 54, 22);
-    width: 100px;
-    height: 40px;
+    background-color: #e52521;
+    width: 150px;
+    height: 52px;
     border-radius: 5px;
     margin: 0 auto;
+    font-size: 20px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin: 0 20px;
+    width: 90%;
+    grid-column-gap: 20px;
+    grid-row-gap: 50px;
 }
