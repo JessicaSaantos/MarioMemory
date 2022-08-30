@@ -18,9 +18,28 @@ function renderizarCartas(){
     }
 }
 
-function clickCarta (){
+function clickCarta (event){
+    const imgClicada = event.target
+    let idClicado = event.target.id
+
+    let personagemClicado = personagens.find(
+        (elemento) => elemento.id == idClicado
+    )
+    imgClicada.src = personagemClicado.img
+
+    if (click01 == null){
+        click01 = imgClicada
+    } else {
+        click02 = imgClicada
+        testePar()
+    }
 
 }
+
+function testePar (){
+    if (click01.id == click02.id)
+}
+
 function shuffleArray(arr){
     for (let i = arr.length - 1; i > 0; i --){
         const j = Math.floor(Math.random() * (i + 1));
