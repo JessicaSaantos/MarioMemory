@@ -7,6 +7,12 @@ let click01 = null;
 let click02 = null;
 let encontrados = 0;
 let placar = 0;
+//================
+let seconds = 0
+let minutes = 0
+let interval;
+const relogio = document.getElementById('time')
+//============
 
 renderizarCartas();
 
@@ -66,10 +72,12 @@ function testePar (){
             placar++;
             placarTag.innerHTML = placar;
             encontrados = 0;
+            clearInterval(interval)
 
             setTimeout(() => {
             main.innerHTML = "";
             renderizarCartas();
+            main.addEventListener("click", click)
             }, 2000);
         }
     }
@@ -81,6 +89,34 @@ function testePar (){
             click02 = null;
           }, 500);
     }
+}
+
+//======================= Contador ==========================
+main.addEventListener("click" , click)
+
+function click(e){
+    time()
+    interval = setInterval(time, 1000)
+    main.removeEventListener("click", click)
+}
+function twoDigits (digit){
+    if (digit<10){
+        return ('0'+digit)
+    }else {
+        return (digit)
+    }
+}
+function time(){
+    seconds++
+    if(seconds == 60) {
+        minutes++
+        seconds = 0
+    }
+    relogio.innerText = twoDigits(minutes) + ':' + twoDigits(seconds)
+}
+//=================================Desafio=======
+function randomNumber(min ,max){
+    return
 }
 
 // ==================== Criando ordem aleatória para embaralhar array =========
