@@ -61,7 +61,7 @@ function testePar (){
         click01 = null;
         click02 = null;
 
-        if (encontrados == 4)
+        if (encontrados == 6)
         {
             placar++;
             placarTag.innerHTML = placar;

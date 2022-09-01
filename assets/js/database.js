@@ -16,7 +16,17 @@ const personagens = [
   },
   {
     id: "3",
-    name: "piranha",
-    img: "./assets/img/Piranha.png",
+    name: "bowser",
+    img: "./assets/img/Bowser.png",
+  },
+  {
+    id: "4",
+    name: "luigi",
+    img: "./assets/img/Luigi.png",
+  },
+  {
+    id: "5",
+    name: "mario",
+    img: "./assets/img/Mario.png",
   },
 ];
