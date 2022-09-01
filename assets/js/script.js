@@ -114,10 +114,10 @@ function time(){
     }
     relogio.innerText = twoDigits(minutes) + ':' + twoDigits(seconds)
 }
-//=================================Desafio=======
-function randomNumber(min ,max){
-    return
-}
+//=================================Desafio========================
+// function randomNumber(min ,max){
+//     return
+// }
 
 // ==================== Criando ordem aleatória para embaralhar array =========
 
