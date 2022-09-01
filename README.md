@@ -8,27 +8,18 @@ Projeto realizado com objetivo de exercitar as tecnologias HTML, CSS e JavaScrip
 
 ## O projeto
 
- - Index html
-
- - jogo.html
-
- - /assets
-
-     • /css
-
-        - reset css
-
-        - style.css
-
-        - jogo.css
-
-     • /js
-
-        - script.js
-
-        - database.js
-
-     • /img
+ * README.md
+ * Index html
+ * jogo.html
+ * /assets
+      - /css
+         - reset css
+         - style.css
+         - jogo.css
+      - /js
+         - script.js
+         - database.js
+      - /img
      
 
   

@@ -23,11 +23,13 @@ function renderizarCartas(){
         let carta = document.createElement("img")
         
         carta.id = embaralhados[i].id
+
         carta.addEventListener("click", clickCarta)
 
-        carta.src = "./assets/img/QuestionBlock.png"
+        carta.src = "./assets/img/QuestionBlock.png" 
 
         main.appendChild(carta)
+        
     }
 }
 
@@ -41,7 +43,7 @@ function clickCarta (event){
         (elemento) => elemento.id == idClicado
     )
     
-    imgClicada.src = personagemClicado.img;
+    imgClicada.src = personagemClicado.img
 
     if (click01 == null){
         click01 = imgClicada
@@ -77,7 +79,7 @@ function testePar (){
             click02.src = "./assets/img/QuestionBlock.png";
             click01 = null;
             click02 = null;
-          }, 1000);
+          }, 500);
     }
 }
 
@@ -86,7 +88,7 @@ function testePar (){
 function shuffleArray(arr){
     for (let i = arr.length - 1; i > 0; i --){
         const j = Math.floor(Math.random() * (i + 1));
-        [arr[i], arr[j]] = [[arr[j]], arr[i]];
+        [arr[i], arr[j]] = [arr[j], arr[i]];
     }
     return arr;
 }
