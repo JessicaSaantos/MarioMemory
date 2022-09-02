@@ -115,9 +115,15 @@ function time(){
     relogio.innerText = twoDigits(minutes) + ':' + twoDigits(seconds)
 }
 //=================================Desafio========================
-// function randomNumber(min ,max){
-//     return
-// }
+const pontos = document.getElementById('pontos')
+const tempo = document.getElementById('tempo')
+
+pontos.innerText = randomNumber(1, 10)
+tempo.innerText = randomNumber(1, 5)
+
+function randomNumber(min ,max){
+    return Math.floor(Math.random() * (max - min +1)) + min
+}
 
 // ==================== Criando ordem aleatória para embaralhar array =========
 
